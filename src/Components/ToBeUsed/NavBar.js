@@ -1,52 +1,49 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import ViewMode from '../Design/ViewMode'
-import '../Pages_CSS/Nav.css'
+import '../Pages_CSS/Nav.css';
+import sampleImg from '../../Images/Sample.jpg';
+import { useTheme } from '../../Contexts/ThemeContext';
 
-const NavBar = () => {
+const Navbar = () => {
 
-    const [mode, setMode] = useState('light');
+    const { isDarkMode, toggleTheme } = useTheme();
 
-    const toggleMode = () => {
-        if (mode === 'light') {
-            setMode('dark')
-            document.body.style.backgroundColor = '#000000'
-            document.title = 'TextUtils - Dark Mode';
-        }
-
-        else {
-            setMode('light')
-            document.body.style.backgroundColor = 'white'
-            document.title = 'TextUtils - Light Mode';
-        }
+    if (isDarkMode) {
+        document.documentElement.classList.add('Dark');
+    } else {
+        document.documentElement.classList.remove('Dark');
+        document.documentElement.classList.add('light');
     }
 
-    const navigate = useNavigate();
-
-    const navToHowToUse = () => {
-        navigate('./howtoUse');
-    };
-
-    const navTo = () => {
-        navigate('./howtoUse');
-    };
-
     return (
-        <div>
-            <div className="navContainer">
-                <div className="logo">
-                    <img src="" alt="" />
-                </div>
 
-                <div className="links">
-                    <button onClick={navToHowToUse}>How to Use?</button>
-                    <button onClick={setMode('dark')}><ViewMode /></button>
-                    <button onClick={navToHowToUse}>How to Use?</button>
-                    <button onClick={navToHowToUse}>How to Use?</button>
-                </div>
+        <nav className="navbar">
+            <div className="logo">
+                <img src={sampleImg} alt="Logo" />
+                <span className="logo-text">ReferralHub</span>
             </div>
-        </div>
-    )
-}
 
-export default NavBar
+            <ul className="nav-links">
+                <li><a href='#'>Overview</a></li>
+                <li><a href='#'>How It Works</a></li>
+                <li><a href='#'>Hiring</a></li>
+                <li><a href='#'>Tips</a></li>
+            </ul>
+
+            <label class="switch" className='ToggleClass' >
+                <input type="checkbox" onChange={toggleTheme} />
+                <span class="slider">{isDarkMode}</span>
+            </label>
+
+
+            <button className='button' id='signupbut'> Sign up
+            </button>
+
+            <button className='button' id='signinbut'> Sign In
+            </button>
+
+
+        </nav>
+    );
+
+};
+
+export default Navbar;

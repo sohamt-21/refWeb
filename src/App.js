@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Landing from './Components/Pages/Landing';
 import SplineDesign from './Components/Design/SplineDesign';
-import Footer from './Components/ToBeUsed/Footer';
 
 function App() {
 
@@ -19,7 +18,7 @@ function App() {
   return (
     <>
       <Routes>
-        {Loading ? <> <Route path='/' Component={Footer} /></> : <> <Route path='/' Component={Footer} /></>}
+        {Loading ? <> <Route path='/' Component={SplineDesign} /></> : <> <Route path='/' Component={Landing} /></>}
       </Routes>
 
     </>

@@ -25,7 +25,7 @@ const Footer = () => {
     }
 
     return (
-        <div style={{height: "500px",backgroundColor:"#0A1D56" }}>
+        <div style={{height: "500px",backgroundColor:"#0A1D56",padding:"30px" }}>
             <div className="header">
                 <div className="logo">
                     <img src="" alt="" />

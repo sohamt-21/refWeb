@@ -1,0 +1,86 @@
+.MainRenderTheme {
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 1200px;
+    padding-bottom: 50px;
+}
+
+/* This is For Heading Middle  */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newp {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 17px;
+    padding: 3px 68px;
+    color: #333;
+}
+
+/* This is For Heading Middle End*/
+
+/* This is Start For Cards  */
+.cardsContanier {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsContanier .glass {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    background: linear-gradient(#B0DAFF, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(15* 1deg));
+}
+
+.cardsContanier:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+}
+
+.cardsContanier .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsContanier .glass svg {
+    font-size: 2.5em;
+}
+
+/* This is End For the Cards  */

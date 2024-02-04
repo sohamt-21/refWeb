@@ -1,0 +1,21 @@
+.reviewsHeader{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    background-color: #EFECEC;
+    border-radius: 30px;
+}
+
+.headertext{
+    display: flex;
+    height: 70px;
+    flex-direction:column;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.cardContainer{
+    margin-bottom: 10px;
+}

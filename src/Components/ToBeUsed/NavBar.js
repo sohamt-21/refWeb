@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
     const navigate = useNavigate();
+    
     const handleNavigate = (path) => {
         navigate(path);
     };
@@ -29,7 +30,7 @@ const Navbar = () => {
             </div>
 
             <ul className="nav-links">
-                <li onClick={() => handleNavigate('/overview')}>Overview</li>
+                <li><a>Overview</a></li>
                 <li><a href='#'>How It Works</a></li>
                 <li><a href='#'>Hiring</a></li>
                 <li><a href='#'>Tips</a></li>

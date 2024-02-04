@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Jane Smith",
+      "current_company": "Data Solutions Co.",
+      "review": "Vestibulum euismod felis nec justo ultrices, nec varius neque dictum. Nulla facilisi. Integer ut elit nec leo scelerisque congue.",
+      "image": "../Assests/stud1.png"
+    },
+    {
+      "name": "Alex Johnson",
+      "current_company": "InnovateTech Ltd.",
+      "review": "Curabitur at varius nisi. Vivamus bibendum orci non risus aliquet, id aliquam tortor facilisis. Maecenas quis tortor vitae dolor tincidunt imperdiet.",
+      "image": "../Assests/stud2.png"
+    },
+    {
+      "name": "Emily Davis",
+      "current_company": "CodeCrafters Co.",
+      "review": "Phasellus hendrerit urna nec urna consequat, non fringilla odio hendrerit. Integer fermentum justo in euismod bibendum.",
+      "image": "../Assests/stud3.png"
+    }
+  ]
+  

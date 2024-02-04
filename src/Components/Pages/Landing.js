@@ -5,6 +5,7 @@ import Footer from '../ToBeUsed/Footer';
 import CountDown from '../ToBeUsed/CountDown';
 import VideoCall from '../ToBeUsed/VideoCall';
 import Features from './Features';
+import Reviews from '../ToBeUsed/Reviews';
 
 const Landing = () => {
 
@@ -21,6 +22,7 @@ const Landing = () => {
       <br />
       <br />
       <VideoCall />
+      <Reviews/>
       <Footer />
     </div>
   )

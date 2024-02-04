@@ -1,6 +1,5 @@
 import React from 'react'
 import "../Pages_CSS/Herosection.css";
-import Cards from '../Design/Cards';
 
 const HeroSection = () => {
     return (
@@ -15,9 +14,6 @@ const HeroSection = () => {
                 </section>
 
                 <div className='FlexDivision'>
-                    <Cards />
-
-                    <Cards />
                 </div>
 
             </div>

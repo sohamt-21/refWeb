@@ -4,6 +4,8 @@ import Landing from './Components/Pages/Landing';
 import SplineDesign from './Components/Design/SplineDesign';
 import OverView from './Components/Pages/OverView';
 import StudentForm from './Components/Forms/StudentForm';
+import Signup from './Components/Pages/Signup';
+import Signin from './Components/Pages/Signin';
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
         {Loading ? <> <Route path='/' Component={SplineDesign} /></> : <> <Route path='/' Component={Landing} /></>}
         <Route path='/overview' Component={OverView}/>
         <Route path='/student' Component={StudentForm} />
+        <Route path='/signup' Component={Signup} />
+        <Route path='/signin' Component={Signin} />
+
       </Routes>
 
     </>

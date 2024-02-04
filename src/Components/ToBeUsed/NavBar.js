@@ -6,10 +6,10 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
     const navigate = useNavigate();
-    
-    const handleNavigate = (path) => {
-        navigate(path);
-    };
+
+    const HandleNavigate=()=>{
+       navigate("/signup");
+    }
 
     const { isDarkMode, toggleTheme } = useTheme();
 
@@ -42,11 +42,10 @@ const Navbar = () => {
             </label>
 
 
-            <button className='button' id='signupbut'> Sign up
+            <button onClick={HandleNavigate} className='button' id='signupbut'> Sign up
             </button>
 
-            <button className='button' id='signinbut'> Sign In
-            </button>
+            <button className='button' id='signinbut'> Sign In</button>
 
 
         </nav>

@@ -1,11 +1,10 @@
-/* body{
+body{
     margin-left: auto;
     margin-right: auto;
     font-size: large;
     max-width: 90%;
     color: #E8D8C4;
-} */
-
+}
 a{
     color :#E8D8C4;
 }
@@ -56,7 +55,6 @@ a:hover::before {
     width: 80px;
     height: 80px;
     transition: transform 1s ease;
-
 }
 
 .belowLine{

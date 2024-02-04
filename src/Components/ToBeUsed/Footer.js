@@ -3,32 +3,33 @@ import '../Pages_CSS/Footer.css'
 import Discord from '../Assests/Discord-1.png'
 import Insta from '../Assests/Instagram-1.png'
 import Linkdin from '../Assests/LinkedIn-1.png'
-import Twitter from '../Assests/X-1.png'
+import Twitter from '../Assests/X-1.png';
+import FooterPhoto from '../../Images/Footer.png';
 
 
 const Footer = () => {
 
-    const gotoDiscord=()=>{
+    const gotoDiscord = () => {
         window.open("https://discord.com");
     }
 
-    const gotoInsta=()=>{
+    const gotoInsta = () => {
         window.open("https://www.instagram.com");
     }
 
-    const gotoLinkedIn=()=>{
+    const gotoLinkedIn = () => {
         window.open("https://www.linkedin.com/feed/");
     }
 
-    const gotoTwitter=()=>{
+    const gotoTwitter = () => {
         window.open("https://twitter.com/")
     }
 
     return (
-        <div style={{height: "500px",backgroundColor:"#0A1D56",padding:"30px" }}>
+        <div style={{ height: "500px", backgroundColor: "#0A1D56", padding: "30px", marginLeft: "auto", marginRight: "auto", fontSize: "large", maxWidth: "100%", color: "#E8D8C4" }} >
             <div className="header">
                 <div className="logo">
-                    <img src="" alt="" />
+                    <img  style={{height:"200px" ,width:"200px"}} src={FooterPhoto} alt="NO Image Found..." />
                 </div>
 
                 <div className="second">
@@ -78,10 +79,10 @@ const Footer = () => {
                             <p>@2024 All Copyrights Reserved</p>
                         </div>
                         <div className="right">
-                                <img src={Discord} alt="" onClick={gotoDiscord}/>
-                                <img src={Insta} alt="" onClick={gotoInsta}/>
-                                <img src={Linkdin} alt="" onClick={gotoLinkedIn}/>
-                                <img src={Twitter} alt="" onClick={gotoTwitter}/>
+                            <img src={Discord} alt="" onClick={gotoDiscord} />
+                            <img src={Insta} alt="" onClick={gotoInsta} />
+                            <img src={Linkdin} alt="" onClick={gotoLinkedIn} />
+                            <img src={Twitter} alt="" onClick={gotoTwitter} />
                         </div>
                     </div>
                 </div>

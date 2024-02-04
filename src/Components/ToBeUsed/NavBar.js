@@ -1,5 +1,5 @@
 import '../Pages_CSS/Nav.css';
-import sampleImg from '../../Images/Sample.jpg';
+import sampleImg from '../../Images/Logo.png';
 import { useTheme } from '../../Contexts/ThemeContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="logo">
                 <img src={sampleImg} alt="Logo" />
-                <span className="logo-text">ReferralHub</span>
+                <span className="logo-text">ReferHub</span>
             </div>
 
             <ul className="nav-links">

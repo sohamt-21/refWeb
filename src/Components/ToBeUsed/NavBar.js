@@ -1,8 +1,14 @@
 import '../Pages_CSS/Nav.css';
 import sampleImg from '../../Images/Sample.jpg';
 import { useTheme } from '../../Contexts/ThemeContext';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+    const handleNavigate = (path) => {
+        navigate(path);
+    };
 
     const { isDarkMode, toggleTheme } = useTheme();
 
@@ -13,6 +19,7 @@ const Navbar = () => {
         document.documentElement.classList.add('light');
     }
 
+
     return (
 
         <nav className="navbar">
@@ -22,7 +29,7 @@ const Navbar = () => {
             </div>
 
             <ul className="nav-links">
-                <li><a href='#'>Overview</a></li>
+                <li onClick={() => handleNavigate('/overview')}>Overview</li>
                 <li><a href='#'>How It Works</a></li>
                 <li><a href='#'>Hiring</a></li>
                 <li><a href='#'>Tips</a></li>

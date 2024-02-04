@@ -5,6 +5,7 @@ const CountDown = () => {
 
     const [currentNumber, setCurrentNumber] = useState(0);
     let targetInteger = 10000;
+    
 
 
     useEffect(() => {

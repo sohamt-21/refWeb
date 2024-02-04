@@ -5,6 +5,7 @@ const bodyp = require('body-parser');
 const PORT = 9000;
 const mongoose = require("mongoose");
 const Users = require('./Models/Users');
+const WebUsers = require('./Models/WebUsers');
 
 app.use(express.json());
 app.use(bodyp.urlencoded({ extended: true }));
@@ -19,6 +20,12 @@ app.get("/", (req, res) => {
 app.post("/addUsers", async (req, res) => {
     let user = new Users({ company: req.body.companyname, job_tilte: req.body.jobtile, email: req.body.email, salary: req.body.salary });
     let result = await user.save();
+    res.send(result);
+})
+
+app.post("/addWebUsers", async (req, res) => {
+    let webusers = new WebUsers({ name: req.body.Name, email: req.body.Email, password: req.body.Password });
+    let result = await webusers.save();
     res.send(result);
 })
 

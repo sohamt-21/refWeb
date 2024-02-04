@@ -4,7 +4,7 @@ import '../Pages_CSS/CountDown.css';
 const CountDown = () => {
 
     const [currentNumber, setCurrentNumber] = useState(0);
-    let targetInteger = 1000;
+    let targetInteger = 10000;
 
 
     useEffect(() => {
@@ -13,18 +13,17 @@ const CountDown = () => {
                 if (currentNumber < targetInteger) {
                     setCurrentNumber((prevNumber) => prevNumber + 1);
                 } else {
-                    // Stop the animation when target integer is reached
                     clearInterval(intervalId);
                 }
-            }, 100); // Adjust the interval time as needed
+            }, 200);
 
             return () => clearInterval(intervalId);
         };
 
         if (currentNumber < targetInteger) {
             animateNumbers();
-        }else{
-            setCurrentNumber(1000);
+        } else {
+            setCurrentNumber(10000);
         }
 
     }, [currentNumber, targetInteger]);
@@ -33,13 +32,60 @@ const CountDown = () => {
         <>
             <div className='CountDownDiv'>
 
-            <div className='FirstCountDiv'>
+                {/* This is For the First Card */}
 
-            </div>
+                <div className="SecondCard">
+                    <div className="title">
+                        <p className="title-text">
+                            Projects
+                        </p>
+                        <p className="percent">
+                        </p>
+                    </div>
+                    <div className="data">
+                        <p>
+                        {currentNumber}
+                        </p>
+                    </div>
+                </div>
 
-            <div className='FirstCountDiv'>
+                {/* This is For the End of  First Card */}
 
-</div>
+
+                {/* This is For the Second Card */}
+
+                <div className="SecondCard">
+                    <div className="title">
+                        <p className="title-text">
+                            Companies
+                        </p>
+                        <p className="percent">
+                        </p>
+                    </div>
+                    <div className="data">
+                        <p>
+                            {currentNumber}
+                        </p>
+                    </div>
+                </div>
+
+                {/* This is For the End of  Second  Card */}
+
+                {/* This is for the third Card  */}
+
+                <div className="SecondCard">
+                    <div className="title">
+                        <p className="title-text">
+                            Students
+                        </p>
+                    </div>
+                    <div className="data">
+                        <p>
+                        {currentNumber}
+                        </p>
+                    </div>
+                </div>
+                {/* This is End of third card */}
 
 
             </div>

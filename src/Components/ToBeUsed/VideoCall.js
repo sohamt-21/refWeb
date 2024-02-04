@@ -22,7 +22,7 @@ const VideoCall = () => {
                 <div className='WordsDiv'>
                     <h2>Join Us</h2>
 
-                    <p>In a quaint town nestled between rolling hills and serene landscapes, a diverse community thrives. Residents, each with unique stories, create a tapestry of shared experiences. The bustling town square, adorned with charming shops and inviting cafes, serves as a focal point for gatherings and lively conversations.</p>
+                    <p>Join our Peer-to-Peer Meet to delve into the intricate process of referrals with live interactions featuring ReferHub staff. Engage, learn, and bridge your knowledge gaps firsthand. Don't miss out on this opportunity for insightful communication.</p>
 
                     <button className='textbut' onClick={(e) => {
                         e.preventDefault();

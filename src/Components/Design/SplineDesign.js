@@ -1,11 +1,7 @@
-import React from 'react'
-import Spline from '@splinetool/react-spline'
-const SplineDesign = () => {
-  return (
-    <div>
-        <Spline scene="https://prod.spline.design/lJKJB7Jl272m051L/scene.splinecode" />
-    </div>
-  )
-}
+import Spline from '@splinetool/react-spline';
 
-export default SplineDesign
+export default function App() {
+  return (
+    <Spline scene="https://prod.spline.design/lJKJB7Jl272m051L/scene.splinecode" style={{height:""}}/>
+  );
+}

@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-    background-color: #fffffe;
+    background-color: #44c9e0;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -22,7 +22,8 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 3px solid #fefefe;
-    background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    background-color: crimson;
     transition: all 0.5s ease;
   }
   

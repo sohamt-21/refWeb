@@ -10,7 +10,7 @@ const Cards = () => {
                     <span>George Johnson</span>
                     <p>Support Specialist</p>
                 </div>
-                <a href="#" className="button">Folow</a>
+                <a href="#" className="button">Follow</a>
             </div>
         </>
     )

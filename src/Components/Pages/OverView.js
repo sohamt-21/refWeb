@@ -6,7 +6,7 @@ import '../Pages_CSS/OverView.css'
 const OverView = () => {
     return (
         <div>
-            <div className="header">
+            <div className="OVheader">
                 <div className="nav">
                     <NavBar />
                 </div>

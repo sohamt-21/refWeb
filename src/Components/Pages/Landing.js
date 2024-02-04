@@ -4,6 +4,7 @@ import HeroSection from '../ToBeUsed/HeroSection';
 import Footer from '../ToBeUsed/Footer';
 import CountDown from '../ToBeUsed/CountDown';
 import VideoCall from '../ToBeUsed/VideoCall';
+import Features from './Features';
 
 const Landing = () => {
 
@@ -11,6 +12,9 @@ const Landing = () => {
     <div>
       <NavBar />
       <HeroSection />
+      <br />
+      <br />
+      <Features/>
       <br />
       <br />
       <CountDown />

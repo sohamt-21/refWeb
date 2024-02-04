@@ -1,20 +1,20 @@
 [
     {
       "name": "Jane Smith",
-      "current_company": "Data Solutions Co.",
-      "review": "Vestibulum euismod felis nec justo ultrices, nec varius neque dictum. Nulla facilisi. Integer ut elit nec leo scelerisque congue.",
+      "current_company": "Phone pe",
+      "review": "Got first offer from ReferHub",
       "image": "../Assests/stud1.png"
     },
     {
       "name": "Alex Johnson",
-      "current_company": "InnovateTech Ltd.",
-      "review": "Curabitur at varius nisi. Vivamus bibendum orci non risus aliquet, id aliquam tortor facilisis. Maecenas quis tortor vitae dolor tincidunt imperdiet.",
+      "current_company": "Google",
+      "review": "ReferHub helps me lot to get Referal in my Dream Company",
       "image": "../Assests/stud2.png"
     },
     {
       "name": "Emily Davis",
-      "current_company": "CodeCrafters Co.",
-      "review": "Phasellus hendrerit urna nec urna consequat, non fringilla odio hendrerit. Integer fermentum justo in euismod bibendum.",
+      "current_company": "Morgan Stanley",
+      "review": "I like 1:1 Discussion section of this platform",
       "image": "../Assests/stud3.png"
     }
   ]

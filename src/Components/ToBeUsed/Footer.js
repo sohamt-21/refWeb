@@ -55,19 +55,19 @@ const Footer = () => {
                 <div className="fourth">
                     <h2>Comapnies</h2>
                     <li>
-                        <a href="">Microsoft</a>
-                        <a href="">Google</a>
-                        <a href="">Apple</a>
-                        <a href="">Many More</a>
+                        <a href="https://www.microsoft.com/en-in/">Microsoft</a>
+                        <a href="https://www.google.com/">Google</a>
+                        <a href="https://www.apple.com/">Apple</a>
+                        <a href="https://medianet.com/">Many More</a>
                     </li>
                 </div>
 
                 <div className="fifth">
                     <h2>Contact Us</h2>
                     <li>
-                        <a href="">refMe@helpdesk.com</a>
+                        <a href="edushaalahelp@gmail.com">edushaalahelp@gmail.com</a>
                         <a href="">+91 7517207273</a>
-                    </li>
+                    </li>           
                 </div>
             </div>
 

@@ -31,63 +31,66 @@ const CountDown = () => {
     return (
         <>
             <div className='CountDownDiv'>
-
-                {/* This is For the First Card */}
-
-                <div className="SecondCard">
-                    <div className="title">
-                        <p className="title-text">
-                            Projects
-                        </p>
-                        <p className="percent">
-                        </p>
-                    </div>
-                    <div className="data">
-                        <p>
-                        {currentNumber}
-                        </p>
-                    </div>
+                <div className="countText">
+                    <h1></h1>
                 </div>
+                <div className="cards">
+                    {/* This is For the First Card */}
 
-                {/* This is For the End of  First Card */}
-
-
-                {/* This is For the Second Card */}
-
-                <div className="SecondCard">
-                    <div className="title">
-                        <p className="title-text">
-                            Companies
-                        </p>
-                        <p className="percent">
-                        </p>
+                    <div className="SecondCard">
+                        <div className="title">
+                            <p className="title-text">
+                                Projects
+                            </p>
+                            <p className="percent">
+                            </p>
+                        </div>
+                        <div className="data">
+                            <p>
+                                {currentNumber}
+                            </p>
+                        </div>
                     </div>
-                    <div className="data">
-                        <p>
-                            {currentNumber}
-                        </p>
+
+                    {/* This is For the End of  First Card */}
+
+
+                    {/* This is For the Second Card */}
+
+                    <div className="SecondCard">
+                        <div className="title">
+                            <p className="title-text">
+                                Companies
+                            </p>
+                            <p className="percent">
+                            </p>
+                        </div>
+                        <div className="data">
+                            <p>
+                                {currentNumber}
+                            </p>
+                        </div>
                     </div>
+
+                    {/* This is For the End of  Second  Card */}
+
+                    {/* This is for the third Card  */}
+
+                    <div className="SecondCard">
+                        <div className="title">
+                            <p className="title-text">
+                                Students
+                            </p>
+                        </div>
+                        <div className="data">
+                            <p>
+                                {currentNumber}
+                            </p>
+                        </div>
+                    </div>
+                    {/* This is End of third card */}
+
                 </div>
-
-                {/* This is For the End of  Second  Card */}
-
-                {/* This is for the third Card  */}
-
-                <div className="SecondCard">
-                    <div className="title">
-                        <p className="title-text">
-                            Students
-                        </p>
-                    </div>
-                    <div className="data">
-                        <p>
-                        {currentNumber}
-                        </p>
-                    </div>
-                </div>
-                {/* This is End of third card */}
-
-
             </div>
         </>
     )

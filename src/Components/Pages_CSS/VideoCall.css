@@ -1,18 +1,21 @@
 .VideoCallDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
-    border: 3px solid red;
     margin-top: 50px;
+    background-color: #f3f3f3;
+
+    /* border-top-left-radius: 150px;
+    border-top-right-radius: 150px; */
+    border-bottom-left-radius:300px ;
+    border-bottom-right-radius: 300px;
+    margin-bottom: 50px;
 }
 
-.SplineDiv {
-    width: 50%;
-    border: 3px solid green;
-}
 
 .WordsDiv {
-    width: 50%;
+    color: rgb(40, 64, 79);
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -20,6 +23,7 @@
     gap: 1.5rem;
     text-align: left;
     --container-padding: 1.25rem;
+    padding-bottom: 20px;
 }
 
 .WordsDiv h2 {
@@ -27,6 +31,7 @@
     letter-spacing: -.01em;
     line-height: 90%;
     font-weight: 400;
+    align-self: center;
 }
 
 .WordsDiv p {
@@ -35,12 +40,45 @@
     line-height: 140%;
     font-weight: 400;
     margin-top: 20px;
+    align-self: center;
 }
 
-.textbut{
-    margin: auto;
-    display: block;
-    background-color: rgb(255 255 255/var(1));
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+.textbut {
+    align-self: center;
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }

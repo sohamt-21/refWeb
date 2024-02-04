@@ -1,0 +1,78 @@
+.DataDiv {
+    width: 36%;
+    padding: 2.5rem 3.5rem;
+    border: 0.16rem solid #bebeeb;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 4rem;
+
+}
+
+.NeWdiv{
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mb-3{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.Form {
+    text-align: left;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+}
+
+.head {
+    font-weight: 800;
+}
+
+.btnsubmit {
+    align-self: center;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    height: 2.3em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.btnsubmit:hover {
+    color: black;
+}
+
+.btnsubmit:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btnsubmit:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}

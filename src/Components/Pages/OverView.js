@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from '../ToBeUsed/NavBar'
 import TimeLine from '../Design/TimeLine'
-import '../Pages_CSS/OverView.css'
 
 const OverView = () => {
     return (
